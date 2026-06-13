@@ -1,0 +1,88 @@
+def main():
+    
+    score = 0
+    
+    print("=" * 60)
+    print("WELCOME TO THE GENERAL KNOWLEDGE QUIZ!")
+    print("=" * 60)
+    print("Answer the following 5 questions.")
+    print("You get 1 point for each correct answer.\n")
+    
+    print("Question 1: Who wrote our national anthem 'Jan Gan Man'?")
+    print("Options: a) Rabindranath Tagore  b) Sardar Patel  c) M. K Stalin")
+    
+    answer1 = input("Your answer (a/b/c): ").lower().strip()
+    
+    if answer1 == "a" or answer1 == "rabindranath tagore":
+        print("Correct! Rabindranath Tagore wrote Jan Gan Man.\n")
+        score = score + 1
+    else:
+        print("Incorrect. The correct answer is Rabindranath Tagore.\n")
+    
+    print("Question 2: On which date and year was Lord Ram Mandir's Pran Pratishtha held?")
+    print("Options: a) 14-01-2024  b) 22-01-2024  c) 21-02-2024")
+    
+    answer2 = input("Your answer (a/b/c): ").lower().strip()
+    
+    if answer2 == "b" or answer2 == "22-01-2024":
+        print("Correct! Ram Mandir's Pran Pratishtha was held on 22-01-2024.\n")
+        score = score + 1
+    else:
+        print("Incorrect. The correct answer is 22-01-2024.\n")
+    
+    print("Question 3: Which one sees 'Ramayana' 11 times?")
+    print("Options: a) Hanuman  b) Nal-Nil  c) Kakbhushundi")
+    
+    answer3 = input("Your answer (a/b/c): ").lower().strip()
+    
+    if answer3 == "c" or answer3 == "kakbhushundi":
+        print("Correct! Kakbhushundi sees Ramayana 11 times.\n")
+        score = score + 1
+    else:
+        print("Incorrect. The correct answer is Kakbhushundi.\n")
+    
+    print("Question 4: Which one from following is the oldest railway station in India?")
+    print("Options: a) Royapuram  b) Ratlam  c) Thane")
+    
+    answer4 = input("Your answer (a/b/c): ").lower().strip()
+    
+    if answer4 == "a" or answer4 == "royapuram":
+        print("Correct! Royapuram is the oldest railway station in India.\n")
+        score = score + 1
+    else:
+        print("Incorrect. The correct answer is Royapuram.\n")
+    
+    print("Question 5: Which one is the oldest IIT?")
+    print("Options: a) Allahabad  b) Roorkee  c) Madras")
+    
+    answer5 = input("Your answer (a/b/c): ").lower().strip()
+    
+    if answer5 == "b" or answer5 == "roorkee":
+        print("Correct! Roorkee is the oldest IIT.\n")
+        score = score + 1
+    else:
+        print("Incorrect. The correct answer is Roorkee.\n")
+    
+    print("=" * 60)
+    print("QUIZ COMPLETE!")
+    print("=" * 60)
+    print(f"Your Final Score: {score} out of 5")
+    
+    if score == 5:
+        print("Outstanding! You answered all questions correctly!")
+    elif score == 4:
+        print("Great job! You got 4 out of 5 correct.")
+    elif score == 3:
+        print("Good effort! You got 3 out of 5 correct.")
+    elif score == 2:
+        print("Not bad! You got 2 out of 5 correct.")
+    elif score == 1:
+        print("You got 1 out of 5 correct. Keep learning!")
+    else:
+        print("Keep learning! Try again to improve your score.")
+    
+    print("=" * 60)
+
+
+if __name__ == "__main__":
+    main()
